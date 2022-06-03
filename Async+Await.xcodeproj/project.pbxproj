@@ -7,16 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		574BFA91284A676A001C7D25 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 574BFA90284A676A001C7D25 /* StringExtension.swift */; };
 		57C243E22849614D006EEBF0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57C243E12849614D006EEBF0 /* AppDelegate.swift */; };
 		57C243E42849614D006EEBF0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57C243E32849614D006EEBF0 /* SceneDelegate.swift */; };
 		57C243E62849614D006EEBF0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57C243E52849614D006EEBF0 /* ViewController.swift */; };
 		57C243E92849614D006EEBF0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57C243E72849614D006EEBF0 /* Main.storyboard */; };
 		57C243EB2849614E006EEBF0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 57C243EA2849614E006EEBF0 /* Assets.xcassets */; };
 		57C243EE2849614E006EEBF0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57C243EC2849614E006EEBF0 /* LaunchScreen.storyboard */; };
+		57C243F72849618A006EEBF0 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57C243F62849618A006EEBF0 /* Network.swift */; };
+		57C243FA2849620C006EEBF0 /* dogModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57C243F92849620C006EEBF0 /* dogModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		57C243DE2849614D006EEBF0 /* Await.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Await.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		574BFA90284A676A001C7D25 /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
+		57C243DE2849614D006EEBF0 /* Async+Await.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Async+Await.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		57C243E12849614D006EEBF0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		57C243E32849614D006EEBF0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		57C243E52849614D006EEBF0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -24,6 +28,8 @@
 		57C243EA2849614E006EEBF0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		57C243ED2849614E006EEBF0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		57C243EF2849614E006EEBF0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		57C243F62849618A006EEBF0 /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		57C243F92849620C006EEBF0 /* dogModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dogModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +43,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		574BFA8F284A6759001C7D25 /* extension */ = {
+			isa = PBXGroup;
+			children = (
+				574BFA90284A676A001C7D25 /* StringExtension.swift */,
+			);
+			path = extension;
+			sourceTree = "<group>";
+		};
 		57C243D52849614D006EEBF0 = {
 			isa = PBXGroup;
 			children = (
@@ -48,7 +62,7 @@
 		57C243DF2849614D006EEBF0 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				57C243DE2849614D006EEBF0 /* Await.app */,
+				57C243DE2849614D006EEBF0 /* Async+Await.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -56,6 +70,9 @@
 		57C243E02849614D006EEBF0 /* Await */ = {
 			isa = PBXGroup;
 			children = (
+				574BFA8F284A6759001C7D25 /* extension */,
+				57C243F8284961FE006EEBF0 /* model */,
+				57C243F528496155006EEBF0 /* Network */,
 				57C243E12849614D006EEBF0 /* AppDelegate.swift */,
 				57C243E32849614D006EEBF0 /* SceneDelegate.swift */,
 				57C243E52849614D006EEBF0 /* ViewController.swift */,
@@ -67,12 +84,28 @@
 			path = Await;
 			sourceTree = "<group>";
 		};
+		57C243F528496155006EEBF0 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				57C243F62849618A006EEBF0 /* Network.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		57C243F8284961FE006EEBF0 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				57C243F92849620C006EEBF0 /* dogModel.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		57C243DD2849614D006EEBF0 /* Await */ = {
+		57C243DD2849614D006EEBF0 /* Async+Await */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 57C243F22849614E006EEBF0 /* Build configuration list for PBXNativeTarget "Await" */;
+			buildConfigurationList = 57C243F22849614E006EEBF0 /* Build configuration list for PBXNativeTarget "Async+Await" */;
 			buildPhases = (
 				57C243DA2849614D006EEBF0 /* Sources */,
 				57C243DB2849614D006EEBF0 /* Frameworks */,
@@ -82,9 +115,9 @@
 			);
 			dependencies = (
 			);
-			name = Await;
+			name = "Async+Await";
 			productName = Await;
-			productReference = 57C243DE2849614D006EEBF0 /* Await.app */;
+			productReference = 57C243DE2849614D006EEBF0 /* Async+Await.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -102,7 +135,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 57C243D92849614D006EEBF0 /* Build configuration list for PBXProject "Await" */;
+			buildConfigurationList = 57C243D92849614D006EEBF0 /* Build configuration list for PBXProject "Async+Await" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -115,7 +148,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				57C243DD2849614D006EEBF0 /* Await */,
+				57C243DD2849614D006EEBF0 /* Async+Await */,
 			);
 		};
 /* End PBXProject section */
@@ -139,7 +172,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				57C243E62849614D006EEBF0 /* ViewController.swift in Sources */,
+				57C243FA2849620C006EEBF0 /* dogModel.swift in Sources */,
+				574BFA91284A676A001C7D25 /* StringExtension.swift in Sources */,
 				57C243E22849614D006EEBF0 /* AppDelegate.swift in Sources */,
+				57C243F72849618A006EEBF0 /* Network.swift in Sources */,
 				57C243E42849614D006EEBF0 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -285,8 +321,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Await/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -299,8 +337,9 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.sayed.Await;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Isconfig.Async-Await";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -312,8 +351,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Await/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -326,8 +367,9 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.sayed.Await;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Isconfig.Async-Await";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -337,7 +379,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		57C243D92849614D006EEBF0 /* Build configuration list for PBXProject "Await" */ = {
+		57C243D92849614D006EEBF0 /* Build configuration list for PBXProject "Async+Await" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				57C243F02849614E006EEBF0 /* Debug */,
@@ -346,7 +388,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		57C243F22849614E006EEBF0 /* Build configuration list for PBXNativeTarget "Await" */ = {
+		57C243F22849614E006EEBF0 /* Build configuration list for PBXNativeTarget "Async+Await" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				57C243F32849614E006EEBF0 /* Debug */,
